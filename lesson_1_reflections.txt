@@ -1,0 +1,39 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+Narrowing the scope from hundreds/thousands of lines, to just a few lines, expedites the debugging process. In the case of a simple typo, the fix is easy. If it was a more pernicious bug, then this would still be useful, as it would identify the smoking gun (be it a function call, a variable assignment, or other).
+
+
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+Since programming is an iterative process, code will sometimes be written, then subsequently deleted, only to later realize that it was needed afterall. Being able to access this 'deleted' code through historical files increases efficiency. It also allows for the easier identification of bugs, since you can track changes and don't have to manually save a smorgasbord of files and then parse through those files every time you want to find one that had the specific change. Being able to make version-specific comments helps even more here.
+
+
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+The pros are that you are in control, and have more flexbility to do what makes sense for you. The cons are that you are in control, and are more likely to forget to back things up than if it was automatically handled. Ultimately, more flexibility is more valuable for the more advanced user.
+
+
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Git seems to have been developed more for software versioning, which is a discipline where interdependencies between files are expected. It is a matter of developing the features necessary for the target audience of the product/service.
+
+
+
+How can you use the commands git log and git diff to view the history of files?
+
+git log provides a higher level snap shot of the complete commit history of a repository. git diff offers finer grain inspection into two of those files, providing the capability to determine what exactly changed between the two. We can almost think of git log as a coarse filter, which allows us to filter down all of our commits to those that we want to run the fine filter (git diff) on.
+
+
+
+How might using version control make you more confident to make changes that could break something?
+
+Having the peace of mind that no matter what you change, you can easily revert back to a known state, gives more flexibility to go and try to break things. You don't have to remember every single change that you made and worry about going back to revert them manually if your change does indeed break something.
+
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+The most relevant software I am working on right now is the firmware for the driver board, so incorporating git into that would be reasonable. However I feel there are still many commands that I don't know, which would make trying to use Git prohibitive at this point.
