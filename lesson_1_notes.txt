@@ -1,0 +1,35 @@
+Git roughly means 'unpleasant person' in British Slang
+	- it was created by Linus Torvalds "I'm an egotistical bastard and I name all my projects after myself"
+
+Hg (mercurial) is similar to Git
+
+SVN and CVS are other version control systems
+
+Dropbox, Google Docs, and Wikipedia all have built-in version control
+
+It is recommended to try and limit a commit to one logical change. It seems like even with this, the number of saved commits could quickly grow seemingly out of control. An upside is that the fewer changes you make for a given commit, the easier the diff is to interpret.
+
+Git tracks across multiple files. A repository is defined as a collection of related files that all get 'captured' in each commit. When you do a diff, this is performed across all files, so you can see the changes that were present in each file and do a better job of tracking changes across files.
+
+"git clone" copies an entire repository from one computer to another
+
+Version control gives you the confidence to explore with the code
+
+diff <old_file> <new_file>
+scp
+	secure copy
+
+
+git diff <older commit_id> <newer commit_id>
+	difference between two commits in a Git repo. Similar to diff, but only works when invoked on git repos	
+git clone
+	make a copy of an entire Git repo, including its history, on your hard drive
+git log
+	show the commits (with comments) made in a repo
+git checkout <commit_id>
+	temporarily reset all files in a repo to the state they were in during a previous commit
+
+git status
+	shows any files that have yet to be stages, or that have been modified since the last commit
+git stash
+	'stashes' any files that you have changes since the last commit in a separate directory to come back to later

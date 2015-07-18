@@ -1,0 +1,21 @@
+A Git repository will always have a .git file in it. The period before the file name means that by default it is hidden from the user 
+
+Git uses a 'staging area' to allow finer-grained control over which files should be included in a specific commit
+
+
+git init
+	makes a folder a repository. Folder can be empty or already have files
+	git doesn't create any commits for you. Those need to be done yourself.
+
+	"git status" can then be used to make sure the directory was created, and to show the files that are not added to the directory
+
+git add <filename>
+	adds file <filename> to staging area
+
+git reset <filename>
+	removed file <filename> from the staging area
+
+git commit -m "<message>"
+	commits the files in the current staging area to the repository, with the <message> logged
+
+	write your git messages in the imperative (meaning they should sound like a command, instead of past tense)
