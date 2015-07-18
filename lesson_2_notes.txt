@@ -15,7 +15,17 @@ git add <filename>
 git reset <filename>
 	removed file <filename> from the staging area
 
+git reset --hard
+	undo all changes in the working directory and staging area. be careful when using this
+
 git commit -m "<message>"
 	commits the files in the current staging area to the repository, with the <message> logged
 
 	write your git messages in the imperative (meaning they should sound like a command, instead of past tense)
+
+git diff
+	we have seen this command already, though it was used to compare two different commits (as referenced by their commit IDs) If run with no argument, it compares the working directory to the staging area
+
+git diff --staged
+	diff between the files in the staged area and the current commit. Until files are added to the staging area, the staging area is just a copy of the most recent commit, so there will be no diffs
+
