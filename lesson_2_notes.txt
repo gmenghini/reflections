@@ -2,6 +2,15 @@ A Git repository will always have a .git file in it. The period before the file 
 
 Git uses a 'staging area' to allow finer-grained control over which files should be included in a specific commit
 
+Branches are labels for your commits. 'detached HEAD' message means you are looking at a commit that is not labeled with a branch name. 'master' is the name given to the main branch.
+
+The last commit on a branch is referred to as the 'tip' of that branch
+
+Master branch will be your production quality branch, that never breaks, and is the publicly available branch. Then you have a development branch that you use to make improvements, and once those are thoroughly tested, push that to the master branch 
+
+It helps to think of commits as having 'parents'
+
+Merging seems like a challenging task. You merge two branches. Merge works by knowing what the tip of each branch looks like, as well as the last file that was common between the branches. It uses this to determine which lines were added and which were deleted by one or both users, and then automatically updates the information.
 
 git init
 	makes a folder a repository. Folder can be empty or already have files
@@ -29,3 +38,20 @@ git diff
 git diff --staged
 	diff between the files in the staged area and the current commit. Until files are added to the staging area, the staging area is just a copy of the most recent commit, so there will be no diffs
 
+git branch
+	when run without arguments, shows all branches for the current repository
+	when run with the <branch-name> command, it creates a branch with this name
+	when run with the -d <branch-name> commands, the indicated branch is deleted
+
+git checkout <branch-name>
+	checks out a user-defined branch and makes that the working copy
+	-b command both creates a new branch and checks it out (we usually use these two commands back to back anyways)
+
+git log --graph <branch1> <branch2>
+	view the graph that relates branch1 and branch2 from a given repository. the --oneline command shortens the output to one line and makes it easier to read
+
+git show <commit-ID>
+	what changes were introduced by a commit when compared to its parent
+
+git merge <branch-name>
+	merges <branch-name> with the currently checkout out branch

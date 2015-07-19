@@ -6,3 +6,23 @@ A .git folder is created in the repository. You need to initialize the repo beca
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 The staging area allows for more fine-grained control over what you do and don't commit to a repository. The user can be more deliberate in the logic behind contents of certain commits
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+Even if you make changes to a substantial number of files, the staging area can be used to select one file at a time. Since one message is associated with each commit, these messages can directly address a single logical change. Also, git diff can be used to verify what the differences are between the most recent commit and the staging area. 
+
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+In the case of our firmware, a 'debug' branch would be useful, where print statements can be added without worrying about destroying timing, or where large portions of the code can be re-written or commented out to make debugging easier without having to worry about reverting them. I can see how this might balloon the number of branches, though
+
+
+How do the diagrams help you visualize the branch structure?
+
+They help show what is and is not reachable, as well as what commits are and are not present in the various tips of the branches.
+
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Two branches merge to form a single branch, encompassing all the changes that have taken place in both branches since the branch was created. We represent it in the diagram because all commits from both branches can be accessed from the final merged branch.
