@@ -5,7 +5,7 @@ A .git folder is created in the repository. You need to initialize the repo beca
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
-The staging area allows for more fine-grained control over what you do and don't commit to a repository. The user can be more deliberate in the logic behind contents of certain commits
+The staging area allows for more fine-grained control over what you do and don't commit to a repository. The user can be more deliberate in the logic behind contents of certain commits. Often times you will start to change one thing, then get distracted and change several different things. The staging area lets you make only those changes that you initially set out to.
 
 
 How can you use the staging area to make sure you have one commit per logical change?
@@ -26,3 +26,8 @@ They help show what is and is not reachable, as well as what commits are and are
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 
 Two branches merge to form a single branch, encompassing all the changes that have taken place in both branches since the branch was created. We represent it in the diagram because all commits from both branches can be accessed from the final merged branch.
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+By automatically merging, it simplifies the merge process if two individuals made substantial contributions to different parts of the code base that didn't interact with one another. However, if two users did make changes that interact with one another, or changes the same lines, then Git can't automatically know how to approach the merge, and if it was automatic, might make a mistake.

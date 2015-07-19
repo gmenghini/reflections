@@ -55,3 +55,6 @@ git show <commit-ID>
 
 git merge <branch-name>
 	merges <branch-name> with the currently checkout out branch
+
+git log -n <int>
+	will only show int number of commits
