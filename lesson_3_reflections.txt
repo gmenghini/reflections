@@ -1,0 +1,3 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+Good question... If you want to share your work and collaborate with others, you will need some sort of remote repository. Less common, but if you are working on software for a field application that you can't bring your desktop to, you can bring a laptop and write code in the field, push it to a remote repository, and then pull it once you get back to your main workstation so that new features are written with the previous code taken into account.
