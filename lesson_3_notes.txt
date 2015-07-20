@@ -4,6 +4,8 @@ When you push and pull from a remote repository, it is often easy to specify a p
 
 You can clone a local repository to another location on your computer
 
+git pull is the same as running git fetch then git merge
+
 git remote
 	can be run to view current remotes
 	-v command shows what URLs are associated with each remote
@@ -17,3 +19,6 @@ git push <remote> <branch>
 
 git pull <remote> <branch>
 	pulls the specified branch from the specified remote to your local copy
+
+git fetch <remote>
+	updates the <remote>/master commit in your local copy to the master commit on the remote (origin) branch

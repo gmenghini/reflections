@@ -11,3 +11,13 @@ Other people may push to the remote repository while you are in the middle of ad
 Describe the differences between forks, clones, and branches. When would you use one instead of another?
 
 Forks are where you copy a repository of someone else (which you don't have the permission to modify) to make changes suitable to your application. Forks are a subset of clones, which is where a repository is copied from one location to another. Clones are normally meant to indicate a remote repository copied to a local repository. Branches are independent lines of development that are contained within a repository.
+
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+You can quickly do a diff and see what has changed since you last pulled, so that you have an idea of what changes have occured.
+
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+You would have to manually distribute files (and updated versions of files) and when two people made changes to the same file, even if they were in very different parts, the changes would need to be integrated manually. Although this isn't scalable, there is less of a learning curve, and people don't have to take time developing the skills necessary to use a tool like GitHub, so if you need something done quick and dirty for a one-off project, it might be more time efficient to collaborate without Git or GitHub
