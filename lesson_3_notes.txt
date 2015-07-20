@@ -2,6 +2,8 @@ Git has the concept of a 'remote repository' (also called a 'remote'), which is 
 
 When you push and pull from a remote repository, it is often easy to specify a particular branch. not every commit is pushed or pulled for a specific branch - only those commits that are not already stored on the remote or in the local repo
 
+You can clone a local repository to another location on your computer
+
 git remote
 	can be run to view current remotes
 	-v command shows what URLs are associated with each remote

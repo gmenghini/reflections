@@ -1,3 +1,13 @@
 When would you want to use a remote repository rather than keeping all your work local?
 
 Good question... If you want to share your work and collaborate with others, you will need some sort of remote repository. Less common, but if you are working on software for a field application that you can't bring your desktop to, you can bring a laptop and write code in the field, push it to a remote repository, and then pull it once you get back to your main workstation so that new features are written with the previous code taken into account.
+
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+Other people may push to the remote repository while you are in the middle of adding a feature or fixing a bug, and you may want to wait until you are finished with your work before pulling the new remote. In general, you know more about your code and its lifecycle than Git does, so you should be in control of when to pull and push.
+
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Forks are where you copy a repository of someone else (which you don't have the permission to modify) to make changes suitable to your application. Forks are a subset of clones, which is where a repository is copied from one location to another. Clones are normally meant to indicate a remote repository copied to a local repository. Branches are independent lines of development that are contained within a repository.
