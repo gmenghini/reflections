@@ -4,7 +4,11 @@ When you push and pull from a remote repository, it is often easy to specify a p
 
 You can clone a local repository to another location on your computer
 
-git pull is the same as running git fetch then git merge
+git pull is the same as running git fetch then git merge. If you want to know what changes pulling from a branch will cause, then you can run git fetch, do a diff on the applicable branches, then merge the fetches branch with the master branch. Alternatively, you can just run git pull
+
+fast-forward merges operate on a branch, and 'change where the branch points'. The branch only points to one commit (usually at the tip) and a fast-forward merge is used to update this
+
+Git is the version control tool that GitHub is built on. Git is local, GitHub is where we share and collaborate with other people
 
 git remote
 	can be run to view current remotes

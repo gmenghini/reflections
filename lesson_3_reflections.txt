@@ -21,3 +21,8 @@ You can quickly do a diff and see what has changed since you last pulled, so tha
 How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 
 You would have to manually distribute files (and updated versions of files) and when two people made changes to the same file, even if they were in very different parts, the changes would need to be integrated manually. Although this isn't scalable, there is less of a learning curve, and people don't have to take time developing the skills necessary to use a tool like GitHub, so if you need something done quick and dirty for a one-off project, it might be more time efficient to collaborate without Git or GitHub
+
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+Working in a separate branch allows master to remain fully-functional. While adding a new feature, it is likely that you will break some part of the code, and maintaining a separate master branch allows for a (public) working code base. Another up-side is that multiple people can work on different branches simultaneously, whereas everyone working simultaneously on master would be a bit of a clusterf***. A drawback is that pulling from origin/master, merging your local master with the new branch, then pushing that back to GitHub has several extra steps.
