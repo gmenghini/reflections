@@ -10,6 +10,21 @@ fast-forward merges operate on a branch, and 'change where the branch points'. T
 
 Git is the version control tool that GitHub is built on. Git is local, GitHub is where we share and collaborate with other people
 
+-------- Putting it all together ----------
+start by initializing a repo or forking an existing one on GitHub and then cloning it
+make a separate branch so you aren't doing dev work in master
+create a pull request when your work is complete
+might need to pull origin/master and merge master with your dev branch to continue updating pull request
+push final merged code to remote, deleting dev branch
+--------------------------------------------
+
+---better understanding---
+
+make changes to master
+switch back to garrett
+try and merge
+
+
 git remote
 	can be run to view current remotes
 	-v command shows what URLs are associated with each remote
