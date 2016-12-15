@@ -2,6 +2,8 @@ Git has the concept of a 'remote repository' (also called a 'remote'), which is 
 
 When you push and pull from a remote repository, it is often easy to specify a particular branch. not every commit is pushed or pulled for a specific branch - only those commits that are not already stored on the remote or in the local repo
 
+"forking" can be used to clone a repo to your Github account without download any files to your computer 
+
 You can clone a local repository to another location on your computer
 
 git pull is the same as running git fetch then git merge. If you want to know what changes pulling from a branch will cause, then you can run git fetch, do a diff on the applicable branches, then merge the fetches branch with the master branch. Alternatively, you can just run git pull

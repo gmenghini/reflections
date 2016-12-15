@@ -21,11 +21,14 @@ scp
 
 
 git diff <older commit_id> <newer commit_id>
-	difference between two commits in a Git repo. Similar to diff, but only works when invoked on git repos	
+	difference between two commits in a Git repo. Similar to diff, but only works when invoked on git repos
+	shows minus (-) sign next to lines that were removed from older commit, and plus (+) sign next to lines that were added
 git clone
 	make a copy of an entire Git repo, including its history, on your hard drive
 git log
 	show the commits (with comments) made in a repo
+	-- stat command shows additional statistics pertaining to which files have been changed
+
 git checkout <commit_id>
 	temporarily reset all files in a repo to the state they were in during a previous commit
 

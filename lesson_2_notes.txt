@@ -8,7 +8,7 @@ The last commit on a branch is referred to as the 'tip' of that branch
 
 Master branch will be your production quality branch, that never breaks, and is the publicly available branch. Then you have a development branch that you use to make improvements, and once those are thoroughly tested, push that to the master branch 
 
-It helps to think of commits as having 'parents'
+It helps to think of commits as having 'parents', which tie in the concept of "reachability". Each commit stores a reference to its parent, so only some commits can be reachable from others
 
 Merging seems like a challenging task. You merge two branches. Merge works by knowing what the tip of each branch looks like, as well as the last file that was common between the branches. It uses this to determine which lines were added and which were deleted by one or both users, and then automatically updates the information.
 
@@ -33,15 +33,20 @@ git commit -m "<message>"
 	write your git messages in the imperative (meaning they should sound like a command, instead of past tense)
 
 git diff
-	we have seen this command already, though it was used to compare two different commits (as referenced by their commit IDs) If run with no argument, it compares the working directory to the staging area
+	we have seen this command already, though it was used to compare two different commits (as referenced by their commit IDs) 
+	***If run with no argument it compares the working directory to the staging area***
 
 git diff --staged
 	diff between the files in the staged area and the current commit. Until files are added to the staging area, the staging area is just a copy of the most recent commit, so there will be no diffs
 
 git branch
-	when run without arguments, shows all branches for the current repository
-	when run with the <branch-name> command, it creates a branch with this name
-	when run with the -d <branch-name> commands, the indicated branch is deleted
+	show all branches for the current repository
+
+git branch <branch-name>
+	create a branch with this name
+
+git branch -d <branch-name>
+	delete <branch-name>
 
 git checkout <branch-name>
 	checks out a user-defined branch and makes that the working copy
